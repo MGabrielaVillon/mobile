@@ -10,9 +10,6 @@ interface ContainerProps {
 const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
     <div className="container">
-      <strong>{name}</strong>
-      <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-      <>
         <IonButton id="present-alert">Click Me</IonButton>
         <IonAlert
           trigger="present-alert"
@@ -21,7 +18,6 @@ const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
           message="A message should be a short, complete sentence."
           buttons={['Action']}
         ></IonAlert>
-      </>
     </div>
   );
 };
